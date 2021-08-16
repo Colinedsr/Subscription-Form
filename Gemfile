@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'simple_form'
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass', '~> 5.12.0'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
