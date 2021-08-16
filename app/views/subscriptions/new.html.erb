@@ -1,5 +1,5 @@
 <div class="container">
-      <h1 class="d-flex justify-content-center col-12">Subscription form</h1>
+      <h1 class="d-flex justify-content-center col-12 p-3">Subscription form</h1>
         <p>Some text</p>
 
       <div class="form-inputs">
@@ -9,7 +9,7 @@
           <%= s.input :email,
                       placeholder: 'Email' %>
           <%= s.input :phone, placeholder: 'Phone' %>
-          <%= s.submit %>
+          <%= s.submit "Add subscription", disabled: true %>
         <% end %>
       </div>
 
@@ -17,9 +17,9 @@
       <div class="subscriptions-cards col-12">
         <% @subscriptions.each do |subscription| %>
         <div class="card">
-          <%= subscription.name %>
-          <%= subscription.email %>
-          <%= subscription.phone %>
+          <p>Name: <%= subscription.name %></p>
+          <p>Email: <%= subscription.email %></p>
+          <p>Phone: <%= subscription.phone %></p>
         </div>
         <% end %>
       </div>

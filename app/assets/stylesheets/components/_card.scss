@@ -1,14 +1,15 @@
 .subscriptions-cards {
-  display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 20px;
 }
 
 .card {
+  flex-grow: 1;
   margin: 20px 5px;
   background-color: white;
-  width: 550px;
-  height: 300px;
+  padding: 30px;
   border-radius: 20px;
-  box-shadow: -1px 9px 21px -6px rgba(189,189,189,0.78);
+}
+
+.card p {
+  font-weight: bold;
 }

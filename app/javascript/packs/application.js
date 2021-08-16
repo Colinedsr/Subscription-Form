@@ -16,3 +16,15 @@ import 'bootstrap';
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+const input = document.querySelector(".input");
+const button = document.querySelector('button-form');
+
+button.disabled = true;
+input.addEventListener("change", stateHandle);
+function stateHandle() {
+    if (document.querySelector(".input").value === "") {
+        button.disabled = true; //button remains disabled
+    } else {
+        button.disabled = false; //button is enabled
+    }
+}
