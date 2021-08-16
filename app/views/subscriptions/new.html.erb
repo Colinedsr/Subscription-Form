@@ -1,13 +1,26 @@
-<h1>Subscriptions#new</h1>
-<p>Find me in app/views/subscriptions/new.html.erb</p>
+<div class="container">
+      <h1 class="d-flex justify-content-center col-12">Subscription form</h1>
+        <p>Some text</p>
 
- <%= simple_form_for (@subscription)do |s| %>
-    <%= s.input :name, placeholder: 'Name' %>
-    <%= s.input :email, placeholder: 'Email' %>
-    <%= s.input :phone, placeholder: 'Phone' %>
-    <%= s.submit %>
-  <% end %>
+      <div class="form-inputs">
+        <%= simple_form_for (@subscription)do |s| %>
+          <%= s.input :name,
+                      placeholder: 'Name' %>
+          <%= s.input :email,
+                      placeholder: 'Email' %>
+          <%= s.input :phone, placeholder: 'Phone' %>
+          <%= s.submit %>
+        <% end %>
+      </div>
 
-<% @subscriptions.each do |subscription| %>
-  <%= subscription.name %>
-<% end %>
+
+      <div class="subscriptions-cards col-12">
+        <% @subscriptions.each do |subscription| %>
+        <div class="card">
+          <%= subscription.name %>
+          <%= subscription.email %>
+          <%= subscription.phone %>
+        </div>
+        <% end %>
+      </div>
+</div>
