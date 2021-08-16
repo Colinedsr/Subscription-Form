@@ -14,9 +14,9 @@
       </div>
 
 
-      <div class="subscriptions-cards col-12">
+      <div class="subscriptions-cards">
         <% @subscriptions.each do |subscription| %>
-        <div class="card">
+        <div class="card d-flex col-12 col-sm-6 col-lg-4">
           <p>Name: <%= subscription.name %></p>
           <p>Email: <%= subscription.email %></p>
           <p>Phone: <%= subscription.phone %></p>
