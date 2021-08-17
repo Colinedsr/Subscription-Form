@@ -8,9 +8,8 @@ const validationInput = () => {
 
   function validate(e) {
     let target = e.target;
-    console.log(e.target.name);
     if (target.name == "subscription[phone]") {
-      if ( regexp.test(target.value)) {
+      if (regexp.test(target.value)) {
         target.classList.add('valid');
         target.classList.remove('invalid');
   }
