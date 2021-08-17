@@ -30,6 +30,14 @@
   }
 
 
+.grid .card:last-child {
+  @media (min-width: 768px) {
+    width: calc(300px - 10px);
+    justify-self: center;
+    grid-column-start: span 2;
+   }
+  }
+
 // Extra large devices (large desktops, 1030px and up)
 @media (min-width: 1030px) {
   .grid {
@@ -39,6 +47,15 @@
 
 
 .grid .field:last-child {
+  @media (min-width: 1030px) {
+    width: calc(300px - 10px);
+    justify-self: center;
+    grid-column-start: span 1;
+   }
+  }
+
+
+.grid .card:last-child {
   @media (min-width: 1030px) {
     width: calc(300px - 10px);
     justify-self: center;
