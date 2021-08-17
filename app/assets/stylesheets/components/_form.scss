@@ -21,7 +21,19 @@ p {
 
 
 .enable {
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
-  background-color: white;
+  border-color: #white;
+  box-shadow: 0 0 1rem #white;
+  background-color: #1460AA;
+  color: white;
+}
+
+
+#subscription_phone {
+  &.valid {
+    color: green;
+  }
+
+  &.invalid {
+    color: red;
+  }
 }

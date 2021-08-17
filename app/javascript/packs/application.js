@@ -17,6 +17,12 @@ import 'bootstrap';
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
+import { validationInput } from '../components/phoneInput';
+document.addEventListener ('DOMContentLoaded', () => {
+  validationInput();
+});
+
+
 import { formButtonSetUp } from '../components/button';
 document.addEventListener ('DOMContentLoaded', () => {
   formButtonSetUp();
