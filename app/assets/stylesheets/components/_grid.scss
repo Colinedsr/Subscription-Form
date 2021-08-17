@@ -3,22 +3,48 @@
 // on tablet 2-column layout (Ipad Pro)
 // on desktop 3-column layout
 
+// Smallest device
 .grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
   justify-content: center;
   align-items: center;
+}
 
-  @media screen and (min-width: 1000px) {
 
-    flex-wrap: wrap;
-    flex-direction: initial;
-  }
 
-  @media screen and (min-width: 1300px) {
-    flex-direction: initial;
+// Medium devices (tablets - Ipad Pro, 768px and up)
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
+
+.grid .field:last-child {
+  @media (min-width: 768px) {
+    width: calc(300px - 10px);
+    justify-self: center;
+    grid-column-start: span 2;
+   }
+  }
+
+
+// Extra large devices (large desktops, 1030px and up)
+@media (min-width: 1030px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+.grid .field:last-child {
+  @media (min-width: 1030px) {
+    width: calc(300px - 10px);
+    justify-self: center;
+    grid-column-start: span 1;
+   }
+  }
 
 .submit-button {
   display: flex;
@@ -28,15 +54,12 @@
 }
 
 .field {
-  padding: 20px;
+  padding: 10px;
   width: 100%;
-  @media screen and (min-width: 1000px) {
-    width: 50%;
-    box-sizing: border-box;
-}
+  }
 
-  @media screen and (min-width: 1300px) {
-    width: 33.3%;
-}
-}
+
+
+
+
 
