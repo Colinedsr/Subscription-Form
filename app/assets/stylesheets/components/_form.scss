@@ -1,19 +1,39 @@
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+p {
+  text-align: center;
+}
+
 .form {
   padding: 25px;
   background-color: white;
   margin: 25px;
-
 }
 
 #button {
   padding: 5px;
   display: flex;
   text-align: center;
-  border: .4rem solid blue;
 }
 
 
 .enable {
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #white;
+  box-shadow: 0 0 1rem #white;
+  background-color: #1460AA;
+  color: white;
+}
+
+
+#subscription_phone {
+  &.valid {
+    color: green;
+  }
+
+  &.invalid {
+    color: red;
+  }
 }
