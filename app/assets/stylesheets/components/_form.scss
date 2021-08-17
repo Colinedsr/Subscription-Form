@@ -5,9 +5,15 @@
 
 }
 
-.button-form {
+#button {
   padding: 5px;
   display: flex;
   text-align: center;
+  border: .4rem solid blue;
 }
 
+
+.enable {
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
