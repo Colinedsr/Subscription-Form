@@ -1,21 +1,36 @@
 .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "item item"
-    "item";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  grid-gap: 16px;
-}
 
-@media (max-width: 991px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
+  @media screen and (min-width: 1000px) {
+
+    flex-wrap: wrap;
+    flex-direction: initial;
+  }
+
+  @media screen and (min-width: 1300px) {
+    flex-direction: initial;
   }
 }
 
-@media (max-width: 576px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
+.submit-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.field {
+  padding: 20px;
+  width: 100%;
+  @media screen and (min-width: 1000px) {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+  @media screen and (min-width: 1300px) {
+    width: 33.3%;
+}
 }

@@ -1,18 +1,27 @@
 <div class="container">
-      <h1 class="d-flex justify-content-center p-3">Subscription form</h1>
+      <h1>Subscription form</h1>
         <p>Some text</p>
 
 
         <%= simple_form_for (@subscription) do |s| %>
           <div class="grid">
-            <%= s.input :name,
-                        placeholder: 'Name' %>
-            <%= s.input :email,
+            <div class="field">
+              <%= s.input :name,
+                        placeholder: 'Name'%>
+            </div>
+            <div class="field">
+              <%= s.input :email,
                         placeholder: 'Email' %>
-            <%= s.input :phone, placeholder: 'Phone' %>
+            </div>
+            <div class="field">
+              <%= s.input :phone, placeholder: 'Phone' %>
+            </div>
           </div>
-            <%= s.submit "Add subscription" %>
+          <div class="submit-button">
+            <%= s.submit "Add subscription", id: :button %>
+          </div>
         <% end %>
+
 
 
 
