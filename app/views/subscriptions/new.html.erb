@@ -2,7 +2,8 @@
       <h1>Subscription form</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante ex, condimentum nec nunc ut, scelerisque rhoncus eros. Ut nec sem eget velit mattis interdum. Mauris lobortis molestie nibh, non cursus risus consectetur et. Sed ac neque ac dui mattis maximus. Pellentesque efficitur sodales semper. Etiam mollis dui nec pellentesque dictum. Donec lacinia placerat urna, id egestas leo placerat vitae. Donec eleifend feugiat malesuada. Integer venenatis molestie leo eu aliquet. Donec vitae fringilla ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget leo imperdiet, suscipit urna ut, suscipit quam.</p>
 
-
+<!-- form for user
+ -->
         <%= simple_form_for (@subscription) do |s| %>
           <div class="grid">
             <div class="field">
@@ -23,8 +24,8 @@
         <% end %>
 
 
-
-
+<!-- Display the added data in a list, below the form
+ -->
       <div class="grid">
         <% @subscriptions.each do |subscription| %>
         <div class="card">

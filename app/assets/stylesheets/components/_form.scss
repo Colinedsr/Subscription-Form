@@ -27,7 +27,7 @@ p {
   color: white;
 }
 
-
+// Creating two classes to differentiate the input whether it is valid or invalid
 #subscription_phone {
   &.valid {
     color: green;
